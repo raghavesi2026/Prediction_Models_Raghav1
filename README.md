@@ -1,172 +1,66 @@
-"# Prediction_Models_Raghav1" 
-"# Perdiction-Model"
+##  Datasets Overview
 
-Machine Learning Internship Projects
-Overview
-This repository contains four Machine Learning projects developed during my internship. These projects demonstrate the complete ML workflow including:
+### 1. Diabetes Prediction
+- *File*: diabetes1.csv
+- *Task*: Binary Classification
+- *Target*: Outcome (0 = No Diabetes, 1 = Diabetes)
+- *Features*: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age
+- *Model Trained*: Yes (Logistic Regression)
 
-Data Collection
-Data Preprocessings
-Feature Scaling
-Train-Test Splitting
-Model Training
-Model Evaluation
-Prediction on New Data
-The projects cover both Classification and Regression problems using Scikit-Learn.
+### 2. Heart Disease Prediction
+- *File*: heart_disease.csv
+- *Task*: Binary Classification
+- *Target*: target (0 = No Disease, 1 = Disease)
+- *Features*: age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal
+- *Model Trained*: Yes
 
-Projects Included
-1. Diabetes Prediction System
-Objective
-Predict whether a patient is diabetic based on medical attributes.
+### 3. House Price Prediction
+- *File*: house_prices.csv
+- *Task*: Regression
+- *Target*: price
+- *Features*: sqft_living, bedrooms, bathrooms, floors, house_age, dist_to_city_km, quality_score
+- *Model Trained*: Yes (Random Forest Regressor)
 
-Dataset Features
-Pregnancies
-Glucose
-Blood Pressure
-Skin Thickness
-Insulin
-BMI
-Diabetes Pedigree Function
-Age
-Algorithms Used
-Support Vector Machine (SVM)
-StandardScaler
-Evaluation Metric
-Accuracy Score : 0.6883116883116883
-Workflow
-Load dataset
-Data exploration and analysis
-Feature scaling
-Train-test split
-Train SVM classifier
-Evaluate model accuracy
-Predict diabetes status for new patient data
-2. Heart Disease Prediction System
-Objective
-Predict whether a person has heart disease using medical information.
+### 4. Weather Classification
+- *File*: weather_classification_data.csv
+- *Task*: Multi-class Classification
+- *Target*: WeatherType (Sunny, Cloudy, Rainy, Snowy)
+- *Features*: Temperature, Humidity, Wind Speed, Precipitation, Cloud Cover, Atmospheric Pressure, UV Index, Season, Visibility, Location
+- *Model Trained*: Yes
 
-Dataset Features
-Age
-Sex
-Chest Pain Type
-Resting Blood Pressure
-Cholesterol
-Fasting Blood Sugar
-ECG Results
-Maximum Heart Rate
-Exercise Induced Angina
-ST Depression
-Number of Major Vessels
-Thalassemia
-Algorithms Used
-Support Vector Machine (SVM)
-StandardScaler
-Evaluation Metric
-Accuracy Score :
-Workflow
-Load dataset
-Handle missing values
-Encode categorical features
-Feature scaling
-Train-test split
-Train SVM model
-Evaluate accuracy
-Predict heart disease for new patient data
-3. House Price Prediction System
-Objective
-Predict house prices based on housing features.
-
-Algorithms Used
-Random Forest Regressor
-StandardScaler
-Data Processing
-Outlier detection using IQR method
-Feature scaling
-Evaluation Metric
-R² Score : 0.9426430733151114
-Workflow
-Load housing dataset
-Remove outliers using IQR
-Split features and target variable
-Scale features
-Train Random Forest model
-Evaluate using R² Score
-Predict house prices for new houses
-4. Wine Quality Prediction System
-Objective
-Predict wine quality using physicochemical properties.
-
-Dataset Features
-Fixed Acidity
-Volatile Acidity
-Citric Acid
-Residual Sugar
-Chlorides
-Free Sulfur Dioxide
-Total Sulfur Dioxide
-Density
-pH
-Sulphates
-Alcohol
-Algorithms Used
-Random Forest Regressor
-StandardScaler
-Data Processing
-Outlier removal using IQR method
-Feature scaling
-Evaluation Metric
-R² Score : 0.25860192464920584
-Workflow
-Load wine quality dataset
-Remove outliers
-Feature scaling
-Train-test split
-Train Random Forest model
-Evaluate performance
-Predict wine quality
-Technologies Used
-Python
-NumPy
-Pandas
-Scikit-Learn
-Matplotlib
-Jupyter Notebook
-Google Colab
-Machine Learning Concepts Implemented
-Data Preprocessing
-Feature Engineering
-Feature Scaling
-Outlier Detection
-Classification
-Regression
-Support Vector Machine (SVM)
-Random Forest Regression
-Model Evaluation
-Accuracy Score
-R² Score
-Installation
-git clone https://github.com/adityamalaviya/ml-internship-projects.git
-
-cd ml-internship-projects
-
-pip install pandas numpy scikit-learn matplotlib
-Run Project
-python diabeticsinternship.py
-python heart_disease.py
-python house_price_internship.py
-python wine_test.py
-Future Improvements
-Add GUI using Streamlit
-Hyperparameter Tuning
-Cross Validation
-Model Serialization using Pickle
-Deploy models using Flask/FastAPI
-Add performance visualizations
+### 5. Wine Quality Prediction
+- *File*: winequality.csv
+- *Task*: Regression / Multi-class Classification
+- *Target*: quality (score from 3 to 9)
+- *Features*: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, alcohol
+- *Model Trained*: Yes
 
 
-Author
-Raghav Rathod 
+text
+Machine-Learning-Projects
+│
+├── Diabetes
+│   ├── Diabetes.ipynb
+│   └── diabetes1.csv
+│
+├── Heart_Disease
+│   ├── Heart_Disease.ipynb
+│   └── heart_disease_data.csv
+│
+├── House_Price_Prediction
+│   ├── House_Price.ipynb
+│   └── house_prices.csv
+│
+├── Weather_Classification
+│   ├── Weather_Classification.ipynb
+│   └── weather_classification_data.csv
+│
+├── Wine_Quality
+│   ├── Wine_Quality.ipynb
+│   └── winequality.csv
+│
+└── README.md
 
-Diploma in Computer Engineering
-
-Machine Learning Internship Projects
+- *Classification Models*: Random Forest, XGBoost, Logistic Regression
+- *Regression Models*: Linear Regression, Random Forest Regressor, XGBoost Regressor
+- *Evaluation Metrics*: Accuracy, Precision, Recall, F1-score, RMSE, R
