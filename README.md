@@ -35,8 +35,9 @@
 - *Features*: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, alcohol
 - *Model Trained*: Yes
 
+## 📂 Project Structure
 
-text
+```text
 Machine-Learning-Projects
 │
 ├── Diabetes
@@ -60,7 +61,4 @@ Machine-Learning-Projects
 │   └── winequality.csv
 │
 └── README.md
-
-- *Classification Models*: Random Forest, XGBoost, Logistic Regression
-- *Regression Models*: Linear Regression, Random Forest Regressor, XGBoost Regressor
-- *Evaluation Metrics*: Accuracy, Precision, Recall, F1-score, RMSE, R
+```
